@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GymBeam Case Study: Web Application for Product List and Details
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project is a simple web application built using **React**, **Next.js**, and **Tailwind CSS**. It allows authenticated customers to view a list of products and access detailed information about each product. The project pulls product data from the **Fake Store API**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The app is designed to provide a smooth and consistent user experience, ensuring it works well on popular browsers such as Safari, Google Chrome, and Firefox. The focus is on creating a user-friendly interface that reflects the GymBeam brand identity.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- User authentication (login only, registration is optional)
+- Access to a list of products
+- Product detail view
+- Ability to log out
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
 
-## Learn More
+- **React**: JavaScript library for building user interfaces
+- **Next.js**: React framework for server-side rendering and static site generation
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development
+- **Fake Store API**: A mock API for retrieving product data
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Make sure you have **Node.js** and **npm** installed. If not, download and install them from [Node.js website](https://nodejs.org/).
 
-## Deploy on Vercel
+### Steps to Run Locally
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the Repository**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   Open your terminal and run the following command to clone the repository:
+
+   ```bash
+   git clone https://github.com/VadimMalkin/probable-octo-guide.git
+   ```
+
+
+
+2. **Install Dependencies**
+
+   Navigate into the project directory:
+
+   ```bash
+   cd probable-octo-guide
+   ```
+
+   Install the required dependencies using npm or yarn:
+
+   ```bash
+   npm install
+   ```
+
+   Or, if you're using Yarn:
+
+   ```bash
+   yarn install
+   ```
+
+3. **Run the Development Server**
+
+   After installing the dependencies, run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+   Or, if using Yarn:
+
+   ```bash
+   yarn dev
+   ```
+
+   This will start the application on [http://localhost:3000](http://localhost:3000).
+
+4. **Visit the Application**
+
+   Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to see the application running locally.
+
+## Application Flow
+
+1. **Login Screen**: The user can log in to access the product list and product details. Registration is optional.
+2. **Product List**: After logging in, the customer will see a list of products fetched from the Fake Store API.
+3. **Product Detail View**: Clicking on any product will open a detailed view of the product.
+4. **Logout**: Users can log out at any time.
+
+## Non-Functional Requirements
+
+* The application is compatible with popular browsers such as **Safari**, **Google Chrome**, and **Firefox**.
+* The application focuses on a consistent and user-friendly UI for a better customer experience.
+* The GymBeam brand identity has been kept in mind while designing the UI.
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
